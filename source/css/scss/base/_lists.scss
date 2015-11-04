@@ -26,8 +26,8 @@ ul {
       border: none;
     }
     &:hover {
-      background-color: $gray-dark;
-
+				background-color: $gray-dark;
+				cursor: default;
     }
   }
 }
