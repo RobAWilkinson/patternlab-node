@@ -21,7 +21,7 @@ ul {
     display: block;
     @include transition(font-size, 0.3s, ease);
     @include transition(background-color, 0.3s, ease);
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $white;
     &:last-child {
       border: none;
     }

@@ -31,9 +31,10 @@ select {
 -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
-   border: $border-thin solid $plum;
+   border: $border-med solid $plum;
+   border-radius: 5px;
    &:hover {
-    background-color: $gray-light;
+    background-color: $gray-light-3;
     cursor: pointer;
    }
    option {

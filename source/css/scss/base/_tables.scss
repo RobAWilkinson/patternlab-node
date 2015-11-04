@@ -3,16 +3,17 @@
 \*------------------------------------*/
 table {
 	border-collapse: collapse; 
-	border-spacing: 0; 
-	border: 1px solid $gray;
+	border-spacing: 2px; 
 	width: 100%;
+  border: 1px solid $gray-light;
+}
+tr:hover {
+  background-color: $gray-dark;
 }
 th {
 	text-align: left;
-	border: 1px solid $gray;
 	padding: 0.2em;
 }
 td {
-	border: 1px solid $gray;
 	padding: 0.2em;
 }
