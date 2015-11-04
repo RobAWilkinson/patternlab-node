@@ -27,6 +27,22 @@ button, input, select, textarea {
     font-size: 100%;
     margin: 0;
 }
+select {
+-webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   border: $border-thin solid $plum;
+   &:hover {
+    background-color: $gray-light;
+    cursor: pointer;
+   }
+   option {
+    background-color: $white;
+   }
+   optgroup {
+    background-color: $white;
+   }
+}
 
 input, textarea {
 	width: 100%;
@@ -116,7 +132,7 @@ input[type="search"]::-webkit-search-decoration {
 	border-color: $error;
 }
 .is-valid {
-	border-color: $valid;
+	border-color: $seafoam;
 }
 
 
