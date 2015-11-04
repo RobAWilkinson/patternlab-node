@@ -10,8 +10,13 @@
 	padding: $pad;
 	border: 0;
 	text-align: center;
-	
+
 	&:hover, &:focus {
+		color: $white;
+	}
+
+	&.alt {
+		background: $orange;
 		color: $white;
 	}
 
@@ -35,5 +40,6 @@
 
 
 .text-btn {
-	font-style: italic;
+	color: $seafoam;
+	text-decoration: underline;
 }
