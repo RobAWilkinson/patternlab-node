@@ -2,10 +2,10 @@
     $Table
 \*------------------------------------*/
 table {
-	border-collapse: collapse; 
-	border-spacing: 2px; 
+	border-collapse: collapse;
+	border-spacing: 2px;
 	width: 100%;
-  border: 1px solid $gray-light;
+
 }
 tr:hover {
   background-color: $gray-dark;
@@ -13,7 +13,9 @@ tr:hover {
 th {
 	text-align: left;
 	padding: 0.2em;
+	border: 1px solid $gray-light;
 }
 td {
 	padding: 0.2em;
+	border: 1px solid $gray-light;
 }
