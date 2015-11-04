@@ -7,7 +7,7 @@ var pkg = require('./package.json'),
     strip_banner = require('gulp-strip-banner'),
     header = require('gulp-header'),
     nodeunit = require('gulp-nodeunit'),
-		//sass = require('gulp-sass'),
+		sass = require('gulp-sass'),
     browserSync = require('browser-sync').create();
 
 require('gulp-load')(gulp);
@@ -86,9 +86,9 @@ gulp.task('connect', ['lab'], function(){
   });
   gulp.watch('./source/css/style.css', ['cp:css']);
 
-  //suggested watches if you use scss
-  // gulp.watch('./source/css/**/*.scss', ['sass:style']);
-  // gulp.watch('./public/styleguide/*.scss', ['sass:styleguide']);
+  // suggested watches if you use scss
+   gulp.watch('./source/css/**/*.scss', ['sass:style']);
+   gulp.watch('./public/styleguide/*.scss', ['sass:styleguide']);
 
   gulp.watch([
     './source/_patterns/**/*.mustache',
@@ -106,25 +106,25 @@ gulp.task('nodeunit', function(){
     .pipe(nodeunit());
 })
 
-//sass tasks, turn on if you want to use
-// gulp.task('sass:style', function(){
-// 	return gulp.src('./source/css/*.scss')
-// 		.pipe(sass({
-// 			outputStyle: 'expanded',
-// 			precision: 8
-// 		}))
-// 		.pipe(gulp.dest('./public/css'))
-//     .pipe(browserSync.stream());
-// })
-// gulp.task('sass:styleguide', function(){
-// 	return gulp.src('./public/styleguide/css/*.scss')
-//  		.pipe(sass({
-//  			outputStyle: 'expanded',
-//  			precision: 8
-//  		}))
-//  		.pipe(gulp.dest('./public/styleguide/css'))
-//     .pipe(browserSync.stream());
-// })
+sass tasks, turn on if you want to use
+ gulp.task('sass:style', function(){
+ 	return gulp.src('./source/css/*.scss')
+ 		.pipe(sass({
+ 			outputStyle: 'expanded',
+ 			precision: 8
+ 		}))
+ 		.pipe(gulp.dest('./public/css'))
+     .pipe(browserSync.stream());
+ })
+ gulp.task('sass:styleguide', function(){
+ 	return gulp.src('./public/styleguide/css/*.scss')
+  		.pipe(sass({
+  			outputStyle: 'expanded',
+  			precision: 8
+  		}))
+  		.pipe(gulp.dest('./public/styleguide/css'))
+     .pipe(browserSync.stream());
+ })
 
 gulp.task('lab-pipe', ['lab'], function(cb){
   cb();
