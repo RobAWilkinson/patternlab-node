@@ -73,7 +73,7 @@ var comments = {
 	{
 		"el": "#p-desc",
 	 	"title" : "Product Description",
-	 	"comment": "A product description is an essential part of any e-commerce experience. Descriptions offer tangible details that inform and persuade, and the tone can help support the physical product. Provide relevant information clearly and concisely. Check out the <a href=\"http://developer.android.com/design/style/writing.html\">Android design guide</a> for some tips on how to keep copy short and extremely effective."	
+	 	"comment": "A product description is an essential part of any e-commerce experience. Descriptions offer tangible details that inform and persuade, and the tone can help support the physical product. Provide relevant information clearly and concisely. Check out the <a href=\"http://developer.android.com/design/style/writing.html\">Android design guide</a> for some tips on how to keep copy short and extremely effective."
 	},
 	{
 		"el": "#related-products",
@@ -104,6 +104,11 @@ var comments = {
 		"el": ".top",
 	 	"title" : "Back to Top Link",
 	 	"comment": "<p>Back to top links are simple yet underrated. They provide users with an easy way back up to the top of the page with minimum effort. This is especially helpful on mobile devices, which tend to have long scrolling pages.</p><p>We're using an HTML character for the back to top arrow in order to reduce image elements and keep things looking crisp on high res displays.</p>"
-	}
+	},
+	{
+    "el": ".alt",
+    "title" : "Alt Button",
+    "comment": "The color for alt buttons is our primary orange.</p>"
+ }
 ]
 };

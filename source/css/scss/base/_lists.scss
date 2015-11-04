@@ -16,11 +16,11 @@ ul {
   margin: 0;
   padding: 0;
   li {
-    color: $gray-dark;
+    color: $white;
     text-decoration: none;
     display: block;
     @include transition(font-size, 0.3s, ease);
-    @include transition(background-color 0.3s, ease);
+    @include transition(background-color, 0.3s, ease);
     border-bottom: 1px solid #ccc;
     &:last-child {
       border: none;
@@ -28,8 +28,7 @@ ul {
     &:hover {
       color: $black;
       background: #f6f6f6;
-    
+
     }
   }
 }
- 
