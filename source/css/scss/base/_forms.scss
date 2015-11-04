@@ -28,7 +28,7 @@ button, input, select, textarea {
     margin: 0;
 }
 select {
--webkit-appearance: none;
+  -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
    border: $border-med solid $plum;
@@ -47,10 +47,15 @@ select {
 }
 
 input, textarea {
+  box-sizing: border-box;
 	width: 100%;
 	border: $border-thin solid $gray;
 	padding: $pad-half 0.65rem;
   border-radius: 5px;
+  &:focus {
+    border: $border-med solid $desert;
+    padding: 0.375rem;
+  }
 }
 
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
