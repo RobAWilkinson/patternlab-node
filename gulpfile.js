@@ -106,7 +106,7 @@ gulp.task('nodeunit', function(){
     .pipe(nodeunit());
 })
 
-sass tasks, turn on if you want to use
+// sass tasks, turn on if you want to use
  gulp.task('sass:style', function(){
  	return gulp.src('./source/css/*.scss')
  		.pipe(sass({
