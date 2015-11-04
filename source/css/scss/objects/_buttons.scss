@@ -3,12 +3,13 @@
 \*------------------------------------*/
 .btn {
 	display: inline-block;
-	background: $salmon;
+	background: $black;
+  border: 3px solid white;
 	color: $white;
+  transition: background-color 100ms ease-in;
 	line-height: 1;
 	font-weight: bold;
 	padding: $pad;
-	border: 0;
 	text-align: center;
 
 	&:hover, &:focus {
@@ -17,7 +18,7 @@
 	}
 
 	&.alt {
-		background: $orange;
+		background: $desert;
 		color: $white;
 		&:hover, &:focus {
 			background: $seafoam;
